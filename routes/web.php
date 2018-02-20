@@ -18,3 +18,25 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// --------------------
+// Backpack\Demo routes
+// --------------------
+Route::group([
+    'prefix'     => config('backpack.base.route_prefix', 'admin'),
+    'middleware' => ['admin'],
+    'namespace'  => 'Admin',
+], function () {
+    // CRUD resources and other admin routes
+    CRUD::resource('monster', 'MonsterCrudController');
+    CRUD::resource('icon', 'IconCrudController');
+    CRUD::resource('product', 'ProductCrudController');
+});
+
+Route::get('events', ['uses' => '\SeanDowney\BackpackEventsCrud\app\Http\Controllers\EventController@index']);
+Route::get('events/{event}/{subs?}', ['as' => 'view-event', 'uses' => '\SeanDowney\BackpackEventsCrud\app\Http\Controllers\EventController@view'])
+    ->where(['event' => '^((?!admin).)*$', 'subs' => '.*']);
+
+/** CATCH-ALL ROUTE for Backpack/PageManager - needs to be at the end of your routes.php file  **/
+Route::get('{page}/{subs?}', ['uses' => 'PageController@index'])
+    ->where(['page' => '^((?!admin).)*$', 'subs' => '.*']);

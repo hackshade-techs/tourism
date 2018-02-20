@@ -1,70 +1,116 @@
 <!DOCTYPE html>
-<html lang="{{ app()->getLocale() }}">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="zxx">
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="@yield('desc')">
+	<meta name="keywords" content="@yield('keywords')">
+	<meta name="robots" content="index,follow">
 
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+	<title>Tourism | @yield('title')</title>
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+	<!-- Bootstrap Core CSS -->
+	<link rel="stylesheet" href="{{ asset('assets/plugins/bootstrap/css/bootstrap.min.css') }}">
 
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+	<!-- Bootstrap Select Option css -->
+	<link rel="stylesheet" href="{{ asset('assets/plugins/bootstrap/css/bootstrap-select.min.css') }}">
+
+	<!-- Slick Slider -->
+	<link href="{{ asset('assets/plugins/slick-slider/slick.css') }}" rel="stylesheet">
+
+	<!-- Icons -->
+	<link href="{{ asset('assets/plugins/font-awesome/css/font-awesome.css') }}" rel="stylesheet">
+	<link href="{{ asset('assets/plugins/themify-icons/css/themify-icons.css') }}" rel="stylesheet">
+	<link href="{{ asset('assets/plugins/line-icons/css/line-font.css') }}" rel="stylesheet">
+
+	<!-- Animate -->
+	<link href="{{ asset('assets/plugins/animate/animate.css') }}" rel="stylesheet">
+
+	<!-- Bootsnav -->
+	<link href="{{ asset('assets/plugins/bootstrap/css/bootsnav.css') }}" rel="stylesheet">
+
+	<!-- Custom style -->
+	<link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+	<link href="{{ asset('assets/css/responsiveness.css') }}" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" id="jssDefault" href="{{ asset('assets/css/colors/main.css') }}">
+
+  @yield('css')
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-<body>
-    <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
+<body class="home-2">
+	<div class="wrapper">
+		<!-- Start Navigation -->
+		@include('includes.header')
+		<!-- End Navigation -->
+		<div class="clearfix"></div>
 
-                    </ul>
+		@yield('content')
 
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
-                        @guest
-                            <li><a class="nav-link" href="{{ route('login') }}">Login</a></li>
-                            <li><a class="nav-link" href="{{ route('register') }}">Register</a></li>
-                        @else
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        Logout
-                                    </a>
+		<!-- ================ Start Footer ======================= -->
+		@include('includes.footer')
+		<!-- ================ End Footer Section ======================= -->
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
-                    </ul>
-                </div>
-            </div>
-        </nav>
+		<!-- ================== Login & Sign Up Window ================== -->
+		@include('includes.modal')
+		<!-- ===================== End Login & Sign Up Window =========================== -->
 
-        <main class="py-4">
-            @yield('content')
-        </main>
-    </div>
+		<a id="back2Top" class="theme-bg" title="Back to top" href="#"><i class="ti-arrow-up"></i></a>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+
+		<!-- START JAVASCRIPT -->
+		<!-- Jquery js-->
+		<script src="{{ asset('assets/js/jquery.min.js') }}"></script>
+
+		<!-- Bootstrap js-->
+		<script src="{{ asset('assets/plugins/bootstrap/js/bootstrap.min.js') }}"></script>
+
+		<!-- Bootsnav js-->
+		<script src="{{ asset('assets/plugins/bootstrap/js/bootsnav.js') }}"></script>
+		<script src="{{ asset('assets/js/viewportchecker.js') }}"></script>
+
+		<!-- Slick Slider js-->
+		<script src="{{ asset('assets/plugins/slick-slider/slick.js') }}"></script>
+
+		<!-- counter js-->
+		<script src="{{ asset('assets/plugins/jquery-counter/js/waypoints.min.js') }}"></script>
+		<script src="{{ asset('assets/plugins/jquery-counter/js/jquery.counterup.min.js') }}"></script>
+
+		<script src="{{ asset('assets/js/jQuery.style.switcher.js') }}"></script>
+
+		<!-- Custom Js -->
+		<script src="{{ asset('assets/js/custom.js') }}"></script>
+
+    @yield('js')
+
+		<script>
+			function openRightMenu() {
+				document.getElementById("rightMenu").style.display = "block";
+			}
+
+			function closeRightMenu() {
+				document.getElementById("rightMenu").style.display = "none";
+			}
+		</script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#styleOptions').styleSwitcher();
+			});
+		</script>
+
+	</div>
 </body>
+
 </html>

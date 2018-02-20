@@ -10,11 +10,15 @@
         "backpack/base": "^0.8.9",
         "backpack/crud": "^3.3",
         "backpack/logmanager": "^2.3",
+        "backpack/newscrud": "^2.1",
+        "backpack/pagemanager": "^1.1",
         "backpack/permissionmanager": "^2.1",
         "backpack/settings": "^2.0",
+        "davejamesmiller/laravel-breadcrumbs": "^5.0",
         "fideloper/proxy": "~4.0",
         "laravel/framework": "5.6.*",
-        "laravel/tinker": "~1.0"
+        "laravel/tinker": "~1.0",
+        "seandowney/backpackeventscrud": "^1.0"
     },
     "require-dev": {
         "backpack/generators": "^1.1",
@@ -24,6 +28,7 @@
         "mockery/mockery": "~1.0",
         "nunomaduro/collision": "~1.1",
         "phpunit/phpunit": "~7.0",
+        "sven/artisan-view": "^3.0",
         "symfony/thanks": "^1.0"
     },
     "autoload": {
