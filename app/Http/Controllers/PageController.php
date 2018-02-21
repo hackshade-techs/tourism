@@ -53,5 +53,8 @@ public function safaris()
 {
   return view('pages.safaris');
 }
+public function single_safaris(){
+  return view('pages.single_safaris');
+}
 
 }

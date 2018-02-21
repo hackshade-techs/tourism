@@ -8,7 +8,7 @@
   <li class="dropdown">
     <a href="login.html" class="dropdown-toggle" data-toggle="dropdown">Safaris Africa</a>
     <ul class="dropdown-menu animated fadeOutUp">
-      <li><a href="add-listing.html">Uganda Experience</a></li>
+      <li><a href="{{ url('/safaris') }}">Uganda Experience</a></li>
       <li><a href="listing-detail.html">Rwanda Experience</a></li>
       <li><a href="listing-detail.html">Tanzania Experience</a></li>
 

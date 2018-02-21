@@ -20,11 +20,11 @@
 <section class="title-transparent page-title" style="background:url(assets/img/title-bg.jpg);">
   <div class="container">
     <div class="title-content">
-      <h1>Grid With Sidebar</h1>
+      <h1>Accomodation</h1>
       <div class="breadcrumbs">
         <a href="#">Home</a>
         <span class="gt3_breadcrumb_divider"></span>
-        <span class="current">Grid With Sidebar</span>
+        <span class="current">Accomodation</span>
       </div>
     </div>
   </div>
@@ -37,7 +37,7 @@
   <div class="container">
     <div class="row">
       <div class="white-box white-shadow padd-top-30 padd-bot-30 translateY-60">
-        <h3 class="text-center">Search For Listing</h3>
+        <h3 class="text-center">Search For Accomodation</h3>
         <form class="form-verticle">
           <div class="col-md-4 col-sm-4 no-padd">
             <input type="text" class="form-control left-radius" placeholder="Keywords..">
@@ -320,249 +320,10 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-sm-6">
-            <div class="listing-shot grid-style">
-              <a href="listing-detail.html">
-                <div class="listing-shot-img">
-                  <img src="assets/img/category/documentry.jpg" class="img-responsive" alt="">
-                  <span class="approve-listing"><i class="fa fa-check"></i></span>
-                </div>
-                <div class="listing-shot-caption">
-                  <h4>Documentary</h4>
-                  <p class="listing-location">Bishop Avenue, New York</p>
-                  <span class="like-listing style-2"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
-                </div>
-              </a>
-              <div class="listing-shot-info">
-                <div class="row extra">
-                  <div class="col-md-12">
-                    <div class="listing-detail-info">
-                      <span><i class="fa fa-phone" aria-hidden="true"></i> 807-502-5867</span>
-                      <span><i class="fa fa-globe" aria-hidden="true"></i> www.mysitelink.com</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="listing-shot-info rating">
-                <div class="row extra">
-                  <div class="col-md-7 col-sm-7 col-xs-6">
-                    <i class="color fa fa-star" aria-hidden="true"></i>
-                    <i class="color fa fa-star" aria-hidden="true"></i>
-                    <i class="color fa fa-star" aria-hidden="true"></i>
-                    <i class="color fa fa-star-half-o" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                  </div>
-                  <div class="col-md-5 col-sm-5 col-xs-6 pull-right">
-                    <a href="#" class="detail-link">Open Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-md-6 col-sm-6">
-            <div class="listing-shot grid-style">
-              <span class="featured-listing"></span>
-              <a href="listing-detail.html">
-                <div class="listing-shot-img">
-                  <img src="assets/img/category/food-1.jpg" class="img-responsive" alt="">
-                  <span class="listing-price">$140</span>
-                </div>
-                <div class="listing-shot-caption">
-                  <h4>Food & Restaurants</h4>
-                  <p class="listing-location">Bishop Avenue, New York</p>
-                  <span class="like-listing style-2"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
-                </div>
-              </a>
-              <div class="listing-shot-info">
-                <div class="row extra">
-                  <div class="col-md-12">
-                    <div class="listing-detail-info">
-                      <span><i class="fa fa-phone" aria-hidden="true"></i> 807-502-5867</span>
-                      <span><i class="fa fa-globe" aria-hidden="true"></i> www.mysitelink.com</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="listing-shot-info rating">
-                <div class="row extra">
-                  <div class="col-md-7 col-sm-7 col-xs-6">
-                    <i class="color fa fa-star" aria-hidden="true"></i>
-                    <i class="color fa fa-star" aria-hidden="true"></i>
-                    <i class="color fa fa-star" aria-hidden="true"></i>
-                    <i class="color fa fa-star-half-o" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                  </div>
-                  <div class="col-md-5 col-sm-5 col-xs-6 pull-right">
-                    <a href="#" class="detail-link">Open Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-md-6 col-sm-6">
-            <div class="listing-shot grid-style">
-              <div class="listing-badge now-open">Now Open</div>
-              <a href="listing-detail.html">
-                <div class="listing-shot-img">
-                  <img src="assets/img/category/instructional.jpg" class="img-responsive" alt="">
-                  <span class="approve-listing"><i class="fa fa-check"></i></span>
-                </div>
-                <div class="listing-shot-caption">
-                  <h4>Instructional</h4>
-                  <p class="listing-location">Bishop Avenue, New York</p>
-                  <span class="like-listing style-2"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
-                </div>
-              </a>
-              <div class="listing-shot-info">
-                <div class="row extra">
-                  <div class="col-md-12">
-                    <div class="listing-detail-info">
-                      <span><i class="fa fa-phone" aria-hidden="true"></i> 807-502-5867</span>
-                      <span><i class="fa fa-globe" aria-hidden="true"></i> www.mysitelink.com</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="listing-shot-info rating">
-                <div class="row extra">
-                  <div class="col-md-7 col-sm-7 col-xs-6">
-                    <i class="color fa fa-star" aria-hidden="true"></i>
-                    <i class="color fa fa-star" aria-hidden="true"></i>
-                    <i class="color fa fa-star" aria-hidden="true"></i>
-                    <i class="color fa fa-star-half-o" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                  </div>
-                  <div class="col-md-5 col-sm-5 col-xs-6 pull-right">
-                    <a href="#" class="detail-link">Open Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-md-6 col-sm-6">
-            <div class="listing-shot grid-style">
-              <span class="featured-listing"></span>
-              <a href="listing-detail.html">
-                <div class="listing-shot-img">
-                  <img src="assets/img/category/sport.jpg" class="img-responsive" alt="">
-                  <span class="listing-price">$140</span>
-                </div>
-                <div class="listing-shot-caption">
-                  <h4>Sport</h4>
-                  <p class="listing-location">Bishop Avenue, New York</p>
-                  <span class="like-listing style-2"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
-                </div>
-              </a>
-              <div class="listing-shot-info">
-                <div class="row extra">
-                  <div class="col-md-12">
-                    <div class="listing-detail-info">
-                      <span><i class="fa fa-phone" aria-hidden="true"></i> 807-502-5867</span>
-                      <span><i class="fa fa-globe" aria-hidden="true"></i> www.mysitelink.com</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="listing-shot-info rating">
-                <div class="row extra">
-                  <div class="col-md-7 col-sm-7 col-xs-6">
-                    <i class="color fa fa-star" aria-hidden="true"></i>
-                    <i class="color fa fa-star" aria-hidden="true"></i>
-                    <i class="color fa fa-star" aria-hidden="true"></i>
-                    <i class="color fa fa-star-half-o" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                  </div>
-                  <div class="col-md-5 col-sm-5 col-xs-6 pull-right">
-                    <a href="#" class="detail-link">Open Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-md-6 col-sm-6">
-            <div class="listing-shot grid-style">
-              <a href="listing-detail.html">
-                <div class="listing-shot-img">
-                  <img src="assets/img/category/business.jpg" class="img-responsive" alt="">
-                </div>
-                <div class="listing-shot-caption">
-                  <h4>Business</h4>
-                  <p class="listing-location">Bishop Avenue, New York</p>
-                  <span class="like-listing style-2"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
-                </div>
-              </a>
-              <div class="listing-shot-info">
-                <div class="row extra">
-                  <div class="col-md-12">
-                    <div class="listing-detail-info">
-                      <span><i class="fa fa-phone" aria-hidden="true"></i> 807-502-5867</span>
-                      <span><i class="fa fa-globe" aria-hidden="true"></i> www.mysitelink.com</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="listing-shot-info rating">
-                <div class="row extra">
-                  <div class="col-md-7 col-sm-7 col-xs-6">
-                    <i class="color fa fa-star" aria-hidden="true"></i>
-                    <i class="color fa fa-star" aria-hidden="true"></i>
-                    <i class="color fa fa-star" aria-hidden="true"></i>
-                    <i class="color fa fa-star-half-o" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                  </div>
-                  <div class="col-md-5 col-sm-5 col-xs-6 pull-right">
-                    <a href="#" class="detail-link">Open Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-sm-6">
-            <div class="listing-shot grid-style">
-              <div class="listing-badge now-open">Now Open</div>
-              <a href="listing-detail.html">
-                <div class="listing-shot-img">
-                  <img src="assets/img/category/travel.jpg" class="img-responsive" alt="">
-                </div>
-                <div class="listing-shot-caption">
-                  <h4>Travel</h4>
-                  <p class="listing-location">Bishop Avenue, New York</p>
-                  <span class="like-listing style-2"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
-                </div>
-              </a>
-              <div class="listing-shot-info">
-                <div class="row extra">
-                  <div class="col-md-12">
-                    <div class="listing-detail-info">
-                      <span><i class="fa fa-phone" aria-hidden="true"></i> 807-502-5867</span>
-                      <span><i class="fa fa-globe" aria-hidden="true"></i> www.mysitelink.com</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="listing-shot-info rating">
-                <div class="row extra">
-                  <div class="col-md-7 col-sm-7 col-xs-6">
-                    <i class="color fa fa-star" aria-hidden="true"></i>
-                    <i class="color fa fa-star" aria-hidden="true"></i>
-                    <i class="color fa fa-star" aria-hidden="true"></i>
-                    <i class="color fa fa-star-half-o" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                  </div>
-                  <div class="col-md-5 col-sm-5 col-xs-6 pull-right">
-                    <a href="#" class="detail-link">Open Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <!-- End All Listing -->
     </div>
     <!-- Start Pagination -->
