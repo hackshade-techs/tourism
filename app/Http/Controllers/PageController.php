@@ -57,4 +57,8 @@ public function single_safaris(){
   return view('pages.single_safaris');
 }
 
+public function single_transport(){
+  return view('pages.single_transport');
+}
+
 }

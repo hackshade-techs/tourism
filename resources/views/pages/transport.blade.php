@@ -274,7 +274,7 @@
                     <i class="fa fa-star" aria-hidden="true"></i>
                   </div>
                   <div class="col-md-5 col-sm-5 col-xs-6 pull-right">
-                    <a href="#" class="detail-link">Open Now</a>
+                    <a href="{{ url('/single-transport') }}" class="detail-link">Open Now</a>
                   </div>
                 </div>
               </div>
@@ -313,14 +313,14 @@
                     <i class="fa fa-star" aria-hidden="true"></i>
                   </div>
                   <div class="col-md-5 col-sm-5 col-xs-6 pull-right">
-                    <a href="#" class="detail-link">Open Now</a>
+                    <a href="{{ url('/single-transport') }}" class="detail-link">Open Now</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-        
+
       <!-- End All Listing -->
     </div>
     <!-- Start Pagination -->

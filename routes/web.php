@@ -40,6 +40,7 @@ Route::get('/plantrip','PageController@plantrip');
 Route::get('/scenery','PageController@scenery');
 Route::get('/safaris','PageController@safaris');
 Route::get('/single-safaris','PageController@single_safaris');
+Route::get('/single-transport','PageController@single_transport');
 
 Route::get('events', ['uses' => '\SeanDowney\BackpackEventsCrud\app\Http\Controllers\EventController@index']);
 Route::get('events/{event}/{subs?}', ['as' => 'view-event', 'uses' => '\SeanDowney\BackpackEventsCrud\app\Http\Controllers\EventController@view'])
