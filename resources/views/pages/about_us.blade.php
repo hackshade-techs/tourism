@@ -1,141 +1,138 @@
 @extends('layouts.app')
 
 @section('title')
-    {{ $page->meta_title }}
+
 @endsection
 
-@section('keywords') 
-	{{ $page->meta_keywords }}
-@endsection 
+@section('keywords')
 
-@section('desc') 
-	{{ $page->meta_description }}
-@endsection 
+@endsection
+
+@section('desc')
+
+@endsection
 
 @section('content')
+<div class="clearfix"></div>
 
-<!-- Inner Page Banner Area Start Here -->
-<div class="inner-page-banner-area" style="background: url(img/inner-page-banner.jpg);">
-	<div class="container">
-		<div class="pagination-area">
-			<h2>About Us</h2>
-			<ul>
-				<li>
-					<a href="{{ url('/') }}">Home -</a> /</li>
-				<li>About</li>
-			</ul>
-		</div>
-	</div>
-</div>
-<!-- Inner Page Banner Area End Here -->
-<!-- About Page Area Start Here -->
-<div class="about-page-area">
-	<img src="img/about1-bottom-back.png" class="img-responsive" alt="about1-bottom-back">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-				<div class="about-page-left">
-					<h2>About Us</h2>
-					<p>
-						<span>
-							<span>2007</span> Vitamin cafe was established in 2007, we do indoors and outside catering, and vitamin cafe has space for
-							celebrating all kinds of parties as it has the favourable grounds for such events. We have experience of 3years, in
-							the UN(united nations) Entebbe base , we specialise in Turkish Kebaps,Mezes, and contintinental food.</p>
-				</div>
-			</div>
-			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-				<div class="about-page-right">
-					<div class="rc-carousel" data-loop="true" data-items="1" data-margin="15" data-autoplay="true" data-autoplay-timeout="10000"
-					 data-smart-speed="2000" data-dots="true" data-nav="false" data-nav-speed="false" data-r-x-small="1" data-r-x-small-nav="false"
-					 data-r-x-small-dots="true" data-r-x-medium="1" data-r-x-medium-nav="false" data-r-x-medium-dots="true" data-r-small="1"
-					 data-r-small-nav="false" data-r-small-dots="true" data-r-medium="1" data-r-medium-nav="false" data-r-medium-dots="true">
-						<div class="about-page-img-holder">
-							<img src="img/default/abou.png" class="img-responsive" alt="about1-banner">
-						</div>
-						<div class="about-page-img-holder">
-							<img src="img/default/about2.jpg" class="img-responsive" alt="about1-banner">
-						</div>
-						<div class="about-page-img-holder">
-							<img src="img/default/about3.jpg" class="img-responsive" alt="about1-banner">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="about-page-bottom">
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-					<div class="about-page-bottom-box border-right wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5s">
-						<div class="media">
-							<a href="#" class="pull-left">
-								<i class="flaticon-verified-protection"></i>
-							</a>
-							<div class="media-body">
-								<h3>
-									<a href="#">We Are Certified</a>
-								</h3>
-								<p>We deal in proffesional indoor and outside catering .</p>
-							</div>
-						</div>
-					</div>
-				</div>
 
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-					<div class="about-page-bottom-box wow zoomIn" data-wow-duration="2s" data-wow-delay="1.5s">
-						<div class="media">
-							<a href="#" class="pull-left">
-								<i class="flaticon-coffee-cup"></i>
-							</a>
-							<div class="media-body">
-								<h3>
-									<a href="#">Cup Of Coffee</a>
-								</h3>
-								<p>We have delicious tea that you can access at our cafe.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- About Page Area End Here -->
-<!-- Award Area Start Here -->
-<div class="award1-area">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-				<div class="award1-area-box">
-					<i class="fa fa-smile-o" aria-hidden="true"></i>
-					<h2 class="about-counter" data-num="5030">5030</h2>
-					<p>Happy Clients</p>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-				<div class="award1-area-box">
-					<i class="fa fa-heart-o" aria-hidden="true"></i>
-					<h2 class="about-counter" data-num="2030">2030</h2>
-					<p>Love People</p>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-				<div class="award1-area-box">
-					<i class="fa fa-coffee" aria-hidden="true"></i>
-					<h2 class="about-counter" data-num="3030">3030</h2>
-					<p>Cup Of Coffee</p>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-				<div class="award1-area-box">
-					<i class="fa fa-book" aria-hidden="true"></i>
-					<h2 class="about-counter" data-num="4320">4320</h2>
-					<p>Chef Recipes</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Award Area End Here -->
+<!-- ================ Start Page Title ======================= -->
+<section class="title-transparent page-title" style="background:url(assets/img/title-bg.jpg);">
+  <div class="container">
+    <div class="title-content">
+      <h1>About Us</h1>
+      <div class="breadcrumbs">
+        <a href="{{ url('/') }}">Home</a>
+        <span class="gt3_breadcrumb_divider"></span>
+        <span class="current">About US</span>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="clearfix"></div>
+<!-- ================ End Page Title ======================= -->
+
+<!-- ================ Start Accordion Component ======================= -->
+<section>
+  <div class="container">
+    <div class="col-md-6 col-sm-12">
+      <div class="panel-group style-1" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="designing">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Web Designing
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="designing">
+            <div class="panel-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisl lorem, dictum id pellentesque at, vestibulum ut arcu. Curabitur erat libero, egestas eu tincidunt ac, rutrum ac justo. Vivamus condimentum laoreet lectus, blandit posuere tortor aliquam vitae. Curabitur molestie eros. </p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="web-development">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Web Development
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="web-development">
+            <div class="panel-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisl lorem, dictum id pellentesque at, vestibulum ut arcu. Curabitur erat libero, egestas eu tincidunt ac, rutrum ac justo. Vivamus condimentum laoreet lectus, blandit posuere tortor aliquam vitae. Curabitur molestie eros. </p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="E-commerce">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                E-commerce Development
+              </a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="E-commerce">
+            <div class="panel-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisl lorem, dictum id pellentesque at, vestibulum ut arcu. Curabitur erat libero, egestas eu tincidunt ac, rutrum ac justo. Vivamus condimentum laoreet lectus, blandit posuere tortor aliquam vitae. Curabitur molestie eros. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-sm-12">
+      <div class="panel-group style-2" id="accordion2" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="choose-us">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                Why People Choose Us
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="choose-us">
+            <div class="panel-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisl lorem, dictum id pellentesque at, vestibulum ut arcu. Curabitur erat libero, egestas eu tincidunt ac, rutrum ac justo. Vivamus condimentum laoreet lectus, blandit posuere tortor aliquam vitae. Curabitur molestie eros. </p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="who">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                Who We Are
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTwo2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="who">
+            <div class="panel-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisl lorem, dictum id pellentesque at, vestibulum ut arcu. Curabitur erat libero, egestas eu tincidunt ac, rutrum ac justo. Vivamus condimentum laoreet lectus, blandit posuere tortor aliquam vitae. Curabitur molestie eros. </p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="work">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+                Our Work Process
+              </a>
+            </h4>
+          </div>
+          <div id="collapseThree3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="work">
+            <div class="panel-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisl lorem, dictum id pellentesque at, vestibulum ut arcu. Curabitur erat libero, egestas eu tincidunt ac, rutrum ac justo. Vivamus condimentum laoreet lectus, blandit posuere tortor aliquam vitae. Curabitur molestie eros. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ================ End Accordion Component ======================= -->
+
+
 
 
 @endsection

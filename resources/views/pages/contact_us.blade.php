@@ -1,159 +1,90 @@
 @extends('layouts.app')
 
 @section('title')
-    {{ $page->meta_title }}
+
 @endsection
 
-@section('keywords') 
-	{{ $page->meta_keywords }}
-@endsection 
+@section('keywords')
 
-@section('desc') 
-	{{ $page->meta_description }}
-@endsection 
+@endsection
+
+@section('desc')
+
+@endsection
 
 @section('content')
 
-<!-- Inner Page Banner Area Start Here -->
-<div class="inner-page-banner-area" style="background: url(img/inner-page-banner.jpg);">
-	<div class="container">
-		<div class="pagination-area">
-			<h2>Contact Us</h2>
-			<ul>
-				<li>
-					<a href="{{ url('/') }}">Home -</a> /</li>
-				<li>Contact</li>
-			</ul>
-		</div>
-	</div>
-</div>
-<!-- Inner Page Banner Area End Here -->
-<!-- Contact Us Page Area Start Here -->
-<div class="contact-us-page-area section-space">
-	<div class="container">
-		<!--<div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">   
-                <div class="google-map-area">                               
-                    <div id="googleMap" style="width:100%; height:395px;"></div>
-                </div>
-            </div>
-        </div>-->
-		<div class="row">
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-				<div class="contact-us-left">
-					<h2 class="title-bar-medium-left inner-sub-title">information</h2>
-					<ul>
-						<li>
-							<i class="fa fa-phone" aria-hidden="true"></i>
-							<h3>Phone</h3>
-							<p>+256-782-123-165</p>
-						</li>
-						<li>
-							<i class="fa fa-map-marker" aria-hidden="true"></i>
-							<h3>Address</h3>
-							<p>PO Box 1212, Entebbe, Uganda.</p>
-						</li>
-						<li>
-							<i class="fa fa-envelope-o" aria-hidden="true"></i>
-							<h3>E-mail</h3>
-							<p>papatyaozturkg@gmail.com</p>
-						</li>
-						<li>
-							<i class="fa fa-share-alt" aria-hidden="true"></i>
-							<h3>Follow Us</h3>
-							<ul class="contact-social">
-								<li>
-									<a href="#">
-										<i class="fa fa-facebook" aria-hidden="true"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="fa fa-twitter" aria-hidden="true"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="fa fa-linkedin" aria-hidden="true"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="fa fa-pinterest" aria-hidden="true"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="fa fa-rss" aria-hidden="true"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="fa fa-google-plus" aria-hidden="true"></i>
-									</a>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-				<div class="contact-us-right">
-					<h2 class="title-bar-medium-left inner-sub-title">Send Us A Massege</h2>
-					<div class="contact-form">
-						@include('includes.success')
-						@include('includes.errors')
-						@include('includes.error')
-						<form action="{{ route('contacts.store') }}" enctype="multipart/form-data" method="POST">
-							{{ csrf_field() }}
-							<fieldset>
-								<div class="row">
-									<div class="col-sm-6">
-										<div class="form-group">
-											<input type="text" placeholder="Name*" class="form-control" name="name" id="form-name" data-error="Name field is required"
-											 required>
-											<div class="help-block with-errors"></div>
-										</div>
-									</div>
-									<div class="col-sm-6">
-										<div class="form-group">
-											<input type="email" placeholder="Email*" class="form-control" name="email" id="form-email" data-error="Email field is required"
-											 required>
-											<div class="help-block with-errors"></div>
-										</div>
-									</div>
-									<div class="col-sm-12">
-										<div class="form-group">
-											<input type="text" placeholder="Subject*" class="form-control" name="subject" id="form-subject" data-error="Subject field is required"
-											 required>
-											<div class="help-block with-errors"></div>
-										</div>
-									</div>
-									<div class="col-sm-12">
-										<div class="form-group">
-											<textarea placeholder="Message*" class="textarea form-control" name="message" id="form-message" rows="7" cols="20" data-error="Message field is required"
-											 required></textarea>
-											<div class="help-block with-errors"></div>
-										</div>
-									</div>
-									<div class="col-lg-4 col-md-4 col-sm-6 col-sm-12">
-										<div class="form-group margin-bottom-none">
-											<button type="submit" class="ghost-on-hover-btn">Send</button>
-										</div>
-									</div>
-									<div class="col-lg-8 col-md-8 col-sm-6 col-sm-12">
-										<div class='form-response'></div>
-									</div>
-								</div>
-							</fieldset>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Contact Us Page Area End Here -->
+<div class="clearfix"></div>
+
+
+<!-- ================ Start Page Title ======================= -->
+<section class="title-transparent page-title" style="background:url(assets/img/title-bg.jpg);">
+  <div class="container">
+    <div class="title-content">
+      <h1>Gent In Touch</h1>
+      <div class="breadcrumbs">
+        <a href="#">Home</a>
+        <span class="gt3_breadcrumb_divider"></span>
+        <span class="current">Contact US</span>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="clearfix"></div>
+<!-- ================ End Page Title ======================= -->
+
+<!-- ================ Office Address ======================= -->
+<section class="padd-0">
+  <div class="container">
+    <div class="col-md-10 col-md-offset-1 col-sm-12 translateY-60">
+      <div class="col-md-6 col-sm-6">
+        <div class="detail-wrapper text-center padd-top-40 mrg-bot-10 padd-bot-40 light-bg">
+          <i class="theme-cl font-30 ti-location-pin"></i>
+          <h4>India Office</h4>
+          Sco 52, Sector 48, Near Gurudwara<br>
+          Chandigarh (258458)
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-6">
+        <div class="detail-wrapper text-center padd-top-40 mrg-bot-10 padd-bot-40 light-bg">
+          <i class="theme-cl font-30 ti-location-pin"></i>
+          <h4>Uk Office</h4>
+          Sco 52, Sector 48, Near Gurudwara<br>
+          Chandigarh (258458)
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ================ End Office Address ======================= -->
+
+<!-- ================ Fill Forms ======================= -->
+<section class="padd-top-0">
+  <div class="container">
+    <div class="col-md-6 col-sm-6">
+      <form>
+        <div class="form-group">
+          <label>Name:</label>
+          <input type="text" class="form-control" placeholder="Name" />
+        </div>
+        <div class="form-group">
+          <label>Email:</label>
+          <input type="email" class="form-control" placeholder="Email" />
+        </div>
+        <div class="form-group">
+          <label>Message:</label>
+          <textarea class="form-control height-120" placeholder="Message"></textarea>
+        </div>
+        <div class="form-group">
+          <button class="btn theme-btn" name="submit">Send Request</button>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-6 col-sm-6">
+      <div id="map_full_width_one" class="full-width" style="height:400px;"></div>
+    </div>
+  </div>
+</section>
 
 
 @endsection

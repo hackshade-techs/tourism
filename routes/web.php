@@ -32,6 +32,13 @@ Route::group([
     CRUD::resource('icon', 'IconCrudController');
     CRUD::resource('product', 'ProductCrudController');
 });
+Route::get('/about','PageController@about');
+Route::get('/contact','PageController@contact');
+Route::get('/accomodation','PageController@accomodation');
+Route::get('/transport','PageController@transport');
+Route::get('/plantrip','PageController@plantrip');
+Route::get('/scenery','PageController@scenery');
+Route::get('/safaris','PageController@safaris');
 
 Route::get('events', ['uses' => '\SeanDowney\BackpackEventsCrud\app\Http\Controllers\EventController@index']);
 Route::get('events/{event}/{subs?}', ['as' => 'view-event', 'uses' => '\SeanDowney\BackpackEventsCrud\app\Http\Controllers\EventController@view'])
