@@ -29,7 +29,7 @@
     </ul>
   </li>
     <li><a href="{{ url('/scenery') }}" >Scenery</a></li>
-  <li><a href="{{ url('/contact') }}" >Contact</a></li>
+  <li><a href="{{ url('/contact-us') }}" >Contact</a></li>
 
 
 </ul>

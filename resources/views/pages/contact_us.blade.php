@@ -21,7 +21,7 @@
 <section class="title-transparent page-title" style="background:url(assets/img/title-bg.jpg);">
   <div class="container">
     <div class="title-content">
-      <h1>Gent In Touch</h1>
+      <h1>Get In Touch</h1>
       <div class="breadcrumbs">
         <a href="#">Home</a>
         <span class="gt3_breadcrumb_divider"></span>
@@ -62,21 +62,24 @@
 <section class="padd-top-0">
   <div class="container">
     <div class="col-md-6 col-sm-6">
-      <form>
+      @include('includes.success')
+      @include('includes.error')
+      <form action="{{ route('contacts.store') }}" method="post">
+        {{ csrf_field() }}
         <div class="form-group">
           <label>Name:</label>
-          <input type="text" class="form-control" placeholder="Name" />
+          <input type="text" name="name" class="form-control" placeholder="Name" />
         </div>
         <div class="form-group">
           <label>Email:</label>
-          <input type="email" class="form-control" placeholder="Email" />
+          <input type="email" name="email" class="form-control" placeholder="Email" />
         </div>
         <div class="form-group">
           <label>Message:</label>
-          <textarea class="form-control height-120" placeholder="Message"></textarea>
+          <textarea class="form-control height-120" name="message" placeholder="Message"></textarea>
         </div>
         <div class="form-group">
-          <button class="btn theme-btn" name="submit">Send Request</button>
+          <button class="btn theme-btn">Send Request</button>
         </div>
       </form>
     </div>

@@ -16,8 +16,9 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('contacts', 'ContactController',['only' => 'store']);
 
 // --------------------
 // Backpack\Demo routes
@@ -28,19 +29,21 @@ Route::group([
     'namespace'  => 'Admin',
 ], function () {
     // CRUD resources and other admin routes
-    CRUD::resource('monster', 'MonsterCrudController');
-    CRUD::resource('icon', 'IconCrudController');
-    CRUD::resource('product', 'ProductCrudController');
+    CRUD::resource('newsletter', 'NewsletterCrudController');
+    CRUD::resource('contact', 'ContactCrudController');
+    CRUD::resource('rate', 'RateCrudController');
+    CRUD::resource('transport', 'TransportCrudController');
+    CRUD::resource('accomodation', 'AccomodationCrudController');
 });
-Route::get('/about','PageController@about');
-Route::get('/contact','PageController@contact');
-Route::get('/accomodation','PageController@accomodation');
-Route::get('/transport','PageController@transport');
-Route::get('/plantrip','PageController@plantrip');
-Route::get('/scenery','PageController@scenery');
-Route::get('/safaris','PageController@safaris');
-Route::get('/single-safaris','PageController@single_safaris');
-Route::get('/single-transport','PageController@single_transport');
+// Route::get('/about','PageController@about');
+// Route::get('/contact','PageController@contact');
+// Route::get('/accomodation','PageController@accomodation');
+// Route::get('/transport','PageController@transport');
+// Route::get('/plantrip','PageController@plantrip');
+// Route::get('/scenery','PageController@scenery');
+// Route::get('/safaris','PageController@safaris');
+// Route::get('/single-safaris','PageController@single_safaris');
+// Route::get('/single-transport','PageController@single_transport');
 
 Route::get('events', ['uses' => '\SeanDowney\BackpackEventsCrud\app\Http\Controllers\EventController@index']);
 Route::get('events/{event}/{subs?}', ['as' => 'view-event', 'uses' => '\SeanDowney\BackpackEventsCrud\app\Http\Controllers\EventController@view'])
