@@ -21,4 +21,44 @@ class PageController extends Controller
 
       return view('pages.'.$page->template, $this->data);
   }
+
+
+public function about(){
+
+  return view('pages.about_us');
+
+
+}
+public function contact()
+{
+  return view('pages.contact_us');
+}
+public function accomodation()
+{
+  return view('pages.accomodation');
+}
+public function transport()
+{
+  return view('pages.transport');
+}
+
+public function plantrip()
+{
+  return view('pages.plantrip');
+}
+public function scenery(){
+  return view('pages.scenery');
+}
+public function safaris()
+{
+  return view('pages.safaris');
+}
+public function single_safaris(){
+  return view('pages.single_safaris');
+}
+
+public function single_transport(){
+  return view('pages.single_transport');
+}
+
 }
