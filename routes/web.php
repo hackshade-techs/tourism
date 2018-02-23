@@ -20,6 +20,7 @@ Route::get('/', function () {
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('tour-category/{category}', 'TourCategoryController@show');
 Route::resource('contacts', 'ContactController',['only' => 'store']);
 
 // --------------------
@@ -45,7 +46,7 @@ Route::get('/plantrip','PageController@plantrip');
 Route::get('/scenery','PageController@scenery');
 Route::get('/safaris','PageController@safaris');
 Route::get('/single-safaris','PageController@single_safaris');
- Route::get('/transports/{transport}','PageController@single_transport');
+Route::get('/transports/{transport}','PageController@single_transport');
 
 Route::get('events', ['uses' => '\SeanDowney\BackpackEventsCrud\app\Http\Controllers\EventController@index']);
 Route::get('events/{event}/{subs?}', ['as' => 'view-event', 'uses' => '\SeanDowney\BackpackEventsCrud\app\Http\Controllers\EventController@view'])

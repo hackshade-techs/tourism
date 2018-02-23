@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\TourCategory;
+use App\Category;
 use Illuminate\Http\Request;
 
 class TourCategoryController extends Controller
@@ -41,21 +41,21 @@ class TourCategoryController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\TourCategory  $tourCategory
+     * @param  \App\Category  $Category
      * @return \Illuminate\Http\Response
      */
-    public function show(TourCategory $tourCategory)
+    public function show(Category $category)
     {
-        //
+        return view('tours.show', compact('category'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\TourCategory  $tourCategory
+     * @param  \App\Category  $Category
      * @return \Illuminate\Http\Response
      */
-    public function edit(TourCategory $tourCategory)
+    public function edit(Category $Category)
     {
         //
     }
@@ -64,10 +64,10 @@ class TourCategoryController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\TourCategory  $tourCategory
+     * @param  \App\Category  $Category
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, TourCategory $tourCategory)
+    public function update(Request $request, Category $Category)
     {
         //
     }
@@ -75,10 +75,10 @@ class TourCategoryController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\TourCategory  $tourCategory
+     * @param  \App\Category  $Category
      * @return \Illuminate\Http\Response
      */
-    public function destroy(TourCategory $tourCategory)
+    public function destroy(Category $Category)
     {
         //
     }
