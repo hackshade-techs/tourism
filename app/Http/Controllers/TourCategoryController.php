@@ -46,7 +46,7 @@ class TourCategoryController extends Controller
      */
     public function show(Category $category)
     {
-        return view('tours.show', compact('category'));
+        return view('tours.index', compact('category'));
     }
 
     /**

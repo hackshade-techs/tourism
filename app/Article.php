@@ -7,10 +7,18 @@ use Illuminate\Database\Eloquent\Model;
 class Article extends Model
 {
   /**
-   * The roles that belong to the user.
+   * The rates that belong to the tour.
    */
   public function rates()
   {
       return $this->belongsToMany('App\Model\Rate');
+  }
+
+  /**
+   * The category to which tours belong
+   */
+  public function category()
+  {
+      return $this->belongsTo('App\Category');
   }
 }
