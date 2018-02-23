@@ -20,9 +20,9 @@
     <a href="login.html" class="dropdown-toggle" data-toggle="dropdown">Explore</a>
     <ul class="dropdown-menu animated fadeOutUp">
       <li><a href="{{ url('/plantrip') }}">Plan Your Trip</a></li>
-      <li><a href="{{ url('/accomodation') }}">Accomodation</a></li>
+      <li><a href="{{ url('/accomodations') }}">Accomodation</a></li>
 
-      <li><a href="{{ url('/transport') }}">Transport</a></li>
+      <li><a href="{{ url('/transports') }}">Transport</a></li>
 
 
 

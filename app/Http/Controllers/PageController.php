@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Backpack\PageManager\app\Models\Page;
+use App\Models\Transport;
+use App\Models\Accomodation;
 
 class PageController extends Controller
 {
@@ -35,16 +37,31 @@ public function contact()
 }
 public function accomodation()
 {
-  return view('pages.accomodation');
+  $accomodations = Accomodation::all();
+  return view('pages.accomodation',compact('accomodations'));
 }
 public function transport()
 {
-  return view('pages.transport');
+
+
+  $transports = Transport::all();
+  return view('pages.transport',compact('transports'));
+}
+
+public function single_transport($id)
+
+{
+
+//  $transport = Transport::find($id);
+     $transport = Transport::find($id);
+
+  return view('pages.single_transport',compact('transport'));
+
 }
 
 public function plantrip()
 {
-  return view('pages.plantrip');
+  return view('pages.plan_trip');
 }
 public function scenery(){
   return view('pages.scenery');
@@ -57,8 +74,6 @@ public function single_safaris(){
   return view('pages.single_safaris');
 }
 
-public function single_transport(){
-  return view('pages.single_transport');
-}
+
 
 }
