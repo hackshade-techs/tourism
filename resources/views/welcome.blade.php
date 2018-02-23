@@ -94,28 +94,20 @@
 			</div>
 
 			<div class="row">
+				@foreach($accomodations as $accomodation)
 				<div class="col-md-4 col-sm-6">
 					<div class="listing-shot grid-style">
-						<a href="listing-detail.html">
+						<a href="#">
 							<div class="listing-shot-img">
 								<img src="assets/img/category/art.jpg" class="img-responsive" alt="">
 								<span class="like-listing"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
 							</div>
 							<div class="listing-shot-caption">
-								<h4>Art & Design</h4>
-								<p class="listing-location">Bishop Avenue, New York</p>
+								<h4>{{ $accomodation->title }}</h4>
+								<?= substr($accomodation->description,0,60) ?> <?= strlen($accomodation->description) > 60 ? " ..." : "" ?>        </p>
 							</div>
 						</a>
-						<div class="listing-shot-info">
-							<div class="row extra">
-								<div class="col-md-12">
-									<div class="listing-detail-info">
-										<span><i class="fa fa-phone" aria-hidden="true"></i> 807-502-5867</span>
-										<span><i class="fa fa-globe" aria-hidden="true"></i> www.mysitelink.com</span>
-									</div>
-								</div>
-							</div>
-						</div>
+
 						<div class="listing-shot-info rating">
 							<div class="row extra">
 								<div class="col-md-7 col-sm-7 col-xs-6">
@@ -126,54 +118,15 @@
 									<i class="fa fa-star" aria-hidden="true"></i>
 								</div>
 								<div class="col-md-5 col-sm-5 col-xs-6 pull-right">
-									<a href="#" class="detail-link">Open Now</a>
+									<a href="accomodations/{{ $accomodation->id }}" class="detail-link">View Details</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				@endforeach
 
 
-
-
-				<div class="col-md-4 col-sm-6">
-					<div class="listing-shot grid-style">
-						<a href="listing-detail.html">
-							<div class="listing-shot-img">
-								<img src="assets/img/category/education.jpg" class="img-responsive" alt="">
-								<span class="like-listing"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
-							</div>
-							<div class="listing-shot-caption">
-								<h4>Education</h4>
-								<p class="listing-location">Bishop Avenue, New York</p>
-							</div>
-						</a>
-						<div class="listing-shot-info">
-							<div class="row extra">
-								<div class="col-md-12">
-									<div class="listing-detail-info">
-										<span><i class="fa fa-phone" aria-hidden="true"></i> 807-502-5867</span>
-										<span><i class="fa fa-globe" aria-hidden="true"></i> www.mysitelink.com</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="listing-shot-info rating">
-							<div class="row extra">
-								<div class="col-md-7 col-sm-7 col-xs-6">
-									<i class="color fa fa-star" aria-hidden="true"></i>
-									<i class="color fa fa-star" aria-hidden="true"></i>
-									<i class="color fa fa-star" aria-hidden="true"></i>
-									<i class="color fa fa-star-half-o" aria-hidden="true"></i>
-									<i class="fa fa-star" aria-hidden="true"></i>
-								</div>
-								<div class="col-md-5 col-sm-5 col-xs-6 pull-right">
-									<a href="#" class="detail-link">Open Now</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 
 			</div>
 		</div>
@@ -201,7 +154,7 @@
 							</div>
 							<div class="cat-box-name">
 								<h4>Art & Design</h4>
-								<a href="search-listing.html" class="btn-btn-wrowse">Browse</a>
+								<a href="#" class="btn-btn-wrowse">Browse</a>
 							</div>
 						</div>
 					</div>
@@ -213,7 +166,7 @@
 							</div>
 							<div class="cat-box-name">
 								<h4>Education</h4>
-								<a href="search-listing.html" class="btn-btn-wrowse">Browse</a>
+								<a href="#" class="btn-btn-wrowse">Browse</a>
 							</div>
 						</div>
 					</div>

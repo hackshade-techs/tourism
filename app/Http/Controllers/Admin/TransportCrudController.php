@@ -29,6 +29,20 @@ class TransportCrudController extends CrudController
         */
 
         $this->crud->setFromDb();
+        $this->crud->addField(
+          [
+            'name'=>'image',
+            'type'=>'browse',
+            'label'=> 'Image'
+          ]
+        );
+        $this->crud->addColumn([
+
+          'name'=>'image',
+          'type'=>'browse',
+          'label'=>'Image'
+
+        ]);
 
         // ------ CRUD FIELDS
         // $this->crud->addField($options, 'update/create/both');
