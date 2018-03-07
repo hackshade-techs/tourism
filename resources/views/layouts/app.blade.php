@@ -29,6 +29,8 @@
 	<link href="{{ asset('assets/plugins/themify-icons/css/themify-icons.css') }}" rel="stylesheet">
 	<link href="{{ asset('assets/plugins/line-icons/css/line-font.css') }}" rel="stylesheet">
 
+	@yield('css-date')
+
 	<!-- Animate -->
 	<link href="{{ asset('assets/plugins/animate/animate.css') }}" rel="stylesheet">
 
@@ -82,6 +84,8 @@
 
 		<!-- Slick Slider js-->
 		<script src="{{ asset('assets/plugins/slick-slider/slick.js') }}"></script>
+
+		@yield('js-date')
 
 		<!-- counter js-->
 		<script src="{{ asset('assets/plugins/jquery-counter/js/waypoints.min.js') }}"></script>

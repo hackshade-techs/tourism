@@ -9,6 +9,11 @@ use App\Models\Accomodation;
 
 class PageController extends Controller
 {
+  /**
+   * shows the pages generated using backpack pagemanager
+   * @param  \Illuminate\Http\Request  $slug
+   * @return \Illuminate\Http\Response
+   */
   public function index($slug)
   {
       $page = Page::findBySlug($slug);
@@ -24,55 +29,14 @@ class PageController extends Controller
       return view('pages.'.$page->template, $this->data);
   }
 
-
-public function about(){
-
-  return view('pages.about_us');
-
-
-}
-public function contact()
-{
-  return view('pages.contact_us');
-}
-public function accomodation()
-{
-  $accomodations = Accomodation::all();
-  return view('pages.accomodation',compact('accomodations'));
-}
-public function transport()
-{
-
-
-  $transports = Transport::all();
-  return view('pages.transport',compact('transports'));
-}
-
-public function single_transport($id)
-
-{
-
-//  $transport = Transport::find($id);
-     $transport = Transport::find($id);
-
-  return view('pages.single_transport',compact('transport'));
-
-}
-
-public function plantrip()
-{
-  return view('pages.plan_trip');
-}
-public function scenery(){
-  return view('pages.scenery');
-}
-public function safaris()
-{
-  return view('pages.safaris');
-}
-public function single_safaris(){
-  return view('pages.single_safaris');
-}
+  /**
+   * show the welcome page
+   * @return \Illuminate\Http\Response
+   */
+  public function welcome()
+  {
+    return view('welcome');
+  }
 
 
 

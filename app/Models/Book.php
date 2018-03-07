@@ -15,11 +15,11 @@ class Book extends Model
     |--------------------------------------------------------------------------
     */
 
-    protected $table = 'books';
+    protected $table = 'bookings';
     // protected $primaryKey = 'id';
     // public $timestamps = false;
-    protected $guarded = ['id'];
-    // protected $fillable = [];
+    // protected $guarded = ['id'];
+    protected $fillable = ['article_id','date', 'time', 'name', 'email', 'phone', 'adults', 'children'];
     // protected $hidden = [];
     // protected $dates = [];
 
@@ -34,6 +34,14 @@ class Book extends Model
     | RELATIONS
     |--------------------------------------------------------------------------
     */
+
+    /**
+     * The article to which bookings have been made
+     */
+    public function article()
+    {
+        return $this->belongsTo('App\Article');
+    }
 
     /*
     |--------------------------------------------------------------------------

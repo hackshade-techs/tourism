@@ -4,10 +4,10 @@
 
 
   <li class="dropdown">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Safaris Africa</a>
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Royal Safaris</a>
     <ul class="dropdown-menu animated fadeOutUp">
       @foreach ($categories as $category)
-        <li><a href="{{ url('tour-category/'.$category->slug) }}">{{ $category->name }}</a></li>
+        <li><a href="{{ url('tours/'.$category->slug) }}">{{ $category->name }}</a></li>
       @endforeach
     </ul>
   </li>
@@ -16,15 +16,14 @@
     <a href="login.html" class="dropdown-toggle" data-toggle="dropdown">Explore</a>
     <ul class="dropdown-menu animated fadeOutUp">
       <li><a href="{{ url('/plantrip') }}">Plan Your Trip</a></li>
-      <li><a href="{{ url('/accomodations') }}">Accomodation</a></li>
+      <li><a href="{{ url('/accomodation') }}">Accomodation</a></li>
 
-      <li><a href="{{ url('/transports') }}">Transport</a></li>
+      <li><a href="{{ url('/transport') }}">Transport</a></li>
 
 
 
     </ul>
   </li>
-    <li><a href="{{ url('/scenery') }}" >Scenery</a></li>
   <li><a href="{{ url('/contact-us') }}" >Contact</a></li>
 
 

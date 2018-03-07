@@ -31,12 +31,31 @@ class BookCrudController extends CrudController
         $this->crud->setFromDb();
 
         // ------ CRUD FIELDS
+        $this->crud->addField([  // Select2
+           'label' => "Tour",
+           'type' => 'select2',
+           'name' => 'article_id', // the db column for the foreign key
+           'entity' => 'article', // the method that defines the relationship in your Model
+           'attribute' => 'title', // foreign key attribute that is shown to user
+           'model' => "App\Article" // foreign key model
+        ]);
         // $this->crud->addField($options, 'update/create/both');
         // $this->crud->addFields($array_of_arrays, 'update/create/both');
         // $this->crud->removeField('name', 'update/create/both');
         // $this->crud->removeFields($array_of_names, 'update/create/both');
 
         // ------ CRUD COLUMNS
+        $this->crud->addColumn([
+           // 1-n relationship
+           'label' => "Tour", // Table column heading
+           'type' => "select",
+           'name' => 'article_id', // the column that contains the ID of that connected entity;
+           'entity' => 'article', // the method that defines the relationship in your Model
+           'attribute' => "title", // foreign key attribute that is shown to user
+           'model' => "App\Article", // foreign key model
+        ]);
+        $this->crud->removeColumn('adults');
+        $this->crud->removeColumn('children');
         // $this->crud->addColumn(); // add a single column, at the end of the stack
         // $this->crud->addColumns(); // add multiple columns, at the end of the stack
         // $this->crud->removeColumn('column_name'); // remove a column from the stack

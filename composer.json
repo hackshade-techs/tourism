@@ -18,8 +18,10 @@
         "davejamesmiller/laravel-breadcrumbs": "^5.0",
         "fideloper/proxy": "~4.0",
         "laravel/framework": "5.6.*",
+        "laravel/scout": "^4.0",
         "laravel/tinker": "~1.0",
-        "seandowney/backpackeventscrud": "^1.0"
+        "seandowney/backpackeventscrud": "^1.0",
+        "teamtnt/laravel-scout-tntsearch-driver": "^3.0"
     },
     "require-dev": {
         "backpack/generators": "^1.1",

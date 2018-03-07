@@ -3,27 +3,27 @@
 namespace App\Http\ViewComposers;
 
 use Illuminate\View\View;
-use App\Article;
+use App\Models\Accomodation;
 
-class TourComposer
+class AccomodationComposer
 {
     /**
      * The tour repository implementation.
      *
-     * @var Article
+     * @var Accomodation
      */
-    protected $tours;
+    protected $accomodation;
 
     /**
      * Create a new tour composer.
      *
-     * @param  Article  $tours
+     * @param  Accomodation  $accomodation
      * @return void
      */
-    public function __construct(Article $tours)
+    public function __construct(Accomodation $accomodation)
     {
         // Dependencies automatically resolved by service container...
-        $this->tours = $tours;
+        $this->accomodation = $accomodation;
     }
 
     /**
@@ -34,6 +34,6 @@ class TourComposer
      */
     public function compose(View $view)
     {
-        $view->with('tourz', $this->tours::latest()->take(4)->get());
+        $view->with('accomodations', $this->accomodation::latest()->paginate(12));
     }
 }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Category;
+use App\Article;
 use Illuminate\Http\Request;
 
 class TourCategoryController extends Controller
@@ -46,7 +47,8 @@ class TourCategoryController extends Controller
      */
     public function show(Category $category)
     {
-        return view('tours.index', compact('category'));
+        $tours = Article::where('category_id', $category->id)->paginate(6);
+        return view('tours.index', compact(['tours', 'category']));
     }
 
     /**

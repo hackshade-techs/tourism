@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Tour;
+use App\Article;
+use App\Category;
 use Illuminate\Http\Request;
 
 class TourController extends Controller
@@ -44,9 +45,10 @@ class TourController extends Controller
      * @param  \App\Tour  $tour
      * @return \Illuminate\Http\Response
      */
-    public function show(Tour $tour)
+    public function show(Category $category, Article $article)
     {
-        //
+      $tour = $article;
+      return view('tours.show', compact(['tour']));
     }
 
     /**

@@ -13,6 +13,7 @@
           <!-- ==== Recommended place for admin menu items ==== -->
           <!-- ================================================ -->
           <li><a href="{{ backpack_url('dashboard') }}"><i class="fa fa-dashboard"></i> <span>{{ trans('backpack::base.dashboard') }}</span></a></li>
+          <li><a href="{{ backpack_url('book') }}"><i class="fa fa-calendar"></i> <span>Reservations</span></a></li>
           <li class="treeview">
               <a href="#"><i class="fa fa-plane"></i> <span>Tours</span> <i class="fa fa-angle-left pull-right"></i></a>
               <ul class="treeview-menu">

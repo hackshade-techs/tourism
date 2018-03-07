@@ -14,11 +14,15 @@ class ComposerServiceProvider extends ServiceProvider
     public function boot()
     {
       view()->composer(
-          ['includes.navs'], 'App\Http\ViewComposers\TourCategoryComposer'
+          ['includes.navs','includes.sidebar', 'includes.tour-sidebar'], 'App\Http\ViewComposers\TourCategoryComposer'
       );
 
       view()->composer(
-          ['includes.navs'], 'App\Http\ViewComposers\TourComposer'
+          ['includes.navs', 'includes.sidebar', 'includes.tour-sidebar'], 'App\Http\ViewComposers\TourComposer'
+      );
+
+      view()->composer(
+          ['pages.accomodation','welcome'], 'App\Http\ViewComposers\AccomodationComposer'
       );
 
     }

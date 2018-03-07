@@ -29,7 +29,7 @@ class AccomodationCrudController extends CrudController
         */
 
         $this->crud->setFromDb();
-        
+
 
         $this->crud->addField([
 
@@ -47,12 +47,27 @@ class AccomodationCrudController extends CrudController
             ]);
 
         // ------ CRUD FIELDS
+        $this->crud->addField([   // WYSIWYG Editor
+            'name' => 'description',
+            'label' => 'Description',
+            'type' => 'wysiwyg'
+        ]);
         // $this->crud->addField($options, 'update/create/both');
         // $this->crud->addFields($array_of_arrays, 'update/create/both');
         // $this->crud->removeField('name', 'update/create/both');
         // $this->crud->removeFields($array_of_names, 'update/create/both');
 
         // ------ CRUD COLUMNS
+        $this->crud->addColumn([
+           'name' => 'image', // The db column name
+           'label' => "Image", // Table column heading
+           'type' => 'image',
+            // 'prefix' => 'folder/subfolder/',
+            // optional width/height if 25px is not ok with you
+            // 'height' => '30px',
+            // 'width' => '30px',
+        ]);
+        $this->crud->removeColumn('description');
         // $this->crud->addColumn(); // add a single column, at the end of the stack
         // $this->crud->addColumns(); // add multiple columns, at the end of the stack
         // $this->crud->removeColumn('column_name'); // remove a column from the stack

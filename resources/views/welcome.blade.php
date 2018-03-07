@@ -4,7 +4,6 @@
 
 	<!-- End Navigation -->
 	<div class="clearfix"></div>
-
 	<!-- Main Banner Section Start -->
 	<div class="banner dark-opacity" style="background-image:url(assets/img/slider-4.jpg);">
 		<div class="container">
@@ -94,7 +93,7 @@
 			</div>
 
 			<div class="row">
-				@foreach($accomodations as $accomodation)
+				@foreach($accomodations->splice(0,3) as $accomodation)
 				<div class="col-md-4 col-sm-6">
 					<div class="listing-shot grid-style">
 						<a href="#">
@@ -191,91 +190,6 @@
 	</section>
 	<!-- End Best categories -->
 
-
-
-	<!-- Pricing Section -->
-	<section>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-10 col-md-offset-1">
-				<div class="heading">
-					<h2>Choose Our <span>Packages</span></h2>
-					<p>These are our packages,chose what you need to explor.</p>
-				</div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-4 col-sm-4">
-					<div class="package-box">
-						<div class="package-header">
-							<i class="fa fa-cog" aria-hidden="true"></i>
-							<h3>Professional</h3>
-						</div>
-						<div class="package-price">
-							<h2><sup>$ </sup>10<sub>/Month</sub></h2>
-						</div>
-						<div class="package-info">
-							<ul>
-							<li>3 Designs</li>
-							<li>3 PSD Designs</li>
-							<li>4 color Option</li>
-							<li>10GB Disk Space</li>
-							<li>Full Support</li>
-							</ul>
-						</div>
-						<button type="submit" class="btn btn-package">Sign Up</button>
-					</div>
-				</div>
-
-				<div class="col-md-4 col-sm-4">
-					<div class="active package-box">
-						<div class="package-header">
-							<i class="fa fa-star-half-o" aria-hidden="true"></i>
-							<h3>Standard</h3>
-						</div>
-						<div class="package-price">
-							<h2><sup>$ </sup>110<sub>/Month</sub></h2>
-						</div>
-						<div class="package-info">
-							<ul>
-							<li>3 Designs</li>
-							<li>3 PSD Designs</li>
-							<li>4 color Option</li>
-							<li>10GB Disk Space</li>
-							<li>Full Support</li>
-							</ul>
-						</div>
-						<button type="submit" class="btn btn-package">Sign Up</button>
-					</div>
-				</div>
-
-				<div class="col-md-4 col-sm-4">
-					<div class="package-box">
-						<div class="package-header">
-							<i class="fa fa-cube" aria-hidden="true"></i>
-							<h3>Premium</h3>
-						</div>
-						<div class="package-price">
-							<h2><sup>$ </sup>170<sub>/Month</sub></h2>
-						</div>
-						<div class="package-info">
-							<ul>
-							<li>3 Designs</li>
-							<li>3 PSD Designs</li>
-							<li>4 color Option</li>
-							<li>10GB Disk Space</li>
-							<li>Full Support</li>
-							</ul>
-						</div>
-						<button type="submit" class="btn btn-package">Sign Up</button>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</section>
-	<!-- End Pricing Section -->
 
 
 @endsection

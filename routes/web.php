@@ -10,18 +10,19 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-use App\Models\Accomodation;
 
-Route::get('/', function () {
-    $accomodations = Accomodation::all();
-    return view('welcome',compact('accomodations'));
-});
+// Auth::routes();
+// Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');
+/* Frontend Routes */
+Route::get('/', 'PageController@welcome');
+Route::get('tours/{category}', 'TourCategoryController@show');
+Route::get('tours/{category}/{article}', 'TourController@show');
+Route::get('/transport/{transport}','PageController@single_transport');
 
-Route::get('tour-category/{category}', 'TourCategoryController@show');
+/* Backend Routes */
 Route::resource('contacts', 'ContactController',['only' => 'store']);
+Route::resource('bookings', 'BookingController',['only' => 'store']);
 
 // --------------------
 // Backpack\Demo routes
@@ -37,16 +38,10 @@ Route::group([
     CRUD::resource('rate', 'RateCrudController');
     CRUD::resource('transport', 'TransportCrudController');
     CRUD::resource('accomodation', 'AccomodationCrudController');
+    CRUD::resource('book', 'BookCrudController');
 });
-Route::get('/about','PageController@about');
-Route::get('/contact','PageController@contact');
-Route::get('/accomodations','PageController@accomodation');
-Route::get('/transports','PageController@transport');
-Route::get('/plantrip','PageController@plantrip');
-Route::get('/scenery','PageController@scenery');
-Route::get('/safaris','PageController@safaris');
-Route::get('/single-safaris','PageController@single_safaris');
-Route::get('/transports/{transport}','PageController@single_transport');
+
+
 
 Route::get('events', ['uses' => '\SeanDowney\BackpackEventsCrud\app\Http\Controllers\EventController@index']);
 Route::get('events/{event}/{subs?}', ['as' => 'view-event', 'uses' => '\SeanDowney\BackpackEventsCrud\app\Http\Controllers\EventController@view'])

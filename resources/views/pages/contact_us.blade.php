@@ -23,7 +23,7 @@
     <div class="title-content">
       <h1>Get In Touch</h1>
       <div class="breadcrumbs">
-        <a href="#">Home</a>
+        <a href="{{ url('/') }}">Home</a>
         <span class="gt3_breadcrumb_divider"></span>
         <span class="current">Contact US</span>
       </div>
@@ -40,17 +40,13 @@
       <div class="col-md-6 col-sm-6">
         <div class="detail-wrapper text-center padd-top-40 mrg-bot-10 padd-bot-40 light-bg">
           <i class="theme-cl font-30 ti-location-pin"></i>
-          <h4>India Office</h4>
-          Sco 52, Sector 48, Near Gurudwara<br>
-          Chandigarh (258458)
+          {!! Config::get('settings.address_one') !!}
         </div>
       </div>
       <div class="col-md-6 col-sm-6">
         <div class="detail-wrapper text-center padd-top-40 mrg-bot-10 padd-bot-40 light-bg">
           <i class="theme-cl font-30 ti-location-pin"></i>
-          <h4>Uk Office</h4>
-          Sco 52, Sector 48, Near Gurudwara<br>
-          Chandigarh (258458)
+          {!! Config::get('settings.address_two') !!}
         </div>
       </div>
     </div>
@@ -84,10 +80,29 @@
       </form>
     </div>
     <div class="col-md-6 col-sm-6">
-      <div id="map_full_width_one" class="full-width" style="height:400px;"></div>
+      <div id="map" class="full-width" style="height:400px;"></div>
     </div>
   </div>
 </section>
 
 
+@endsection
+
+@section('js')
+  <script>
+    function initMap() {
+      var uluru = {lat: 0.3476, lng: 32.5825};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 4,
+        center: uluru
+      });
+      var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+      });
+    }
+  </script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9ltMdPbv_kxvLzNBYdlI9wAHbmoGYO90&callback=initMap">
+  </script>
 @endsection
