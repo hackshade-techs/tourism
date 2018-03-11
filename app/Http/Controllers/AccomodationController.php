@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Accomodation;
+use App\Models\Accomodation;
 use Illuminate\Http\Request;
 
 class AccomodationController extends Controller
@@ -46,7 +46,7 @@ class AccomodationController extends Controller
      */
     public function show(Accomodation $accomodation)
     {
-        //
+        return view('pages.single_accomodation', compact('accomodation'));
     }
 
     /**

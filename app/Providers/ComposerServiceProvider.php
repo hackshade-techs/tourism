@@ -25,6 +25,10 @@ class ComposerServiceProvider extends ServiceProvider
           ['pages.accomodation','welcome'], 'App\Http\ViewComposers\AccomodationComposer'
       );
 
+      view()->composer(
+          ['pages.transport'], 'App\Http\ViewComposers\TransportComposer'
+      );
+
     }
 
     /**

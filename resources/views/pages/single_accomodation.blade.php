@@ -21,11 +21,11 @@
   <section class="title-transparent page-title" style="background:url({{ asset('assets/img/title-bg.jpg') }});">
     <div class="container">
       <div class="title-content">
-        <h1>{{ $transport->title }}</h1>
+        <h1>{{ $accomodation->title }}</h1>
         <div class="breadcrumbs">
           <a href="{{ url('/') }}">Home</a>
           <span class="gt3_breadcrumb_divider"></span>
-          <span class="current">{{ $transport->title }}</span>
+          <span class="current">{{ $accomodation->title }}</span>
         </div>
       </div>
     </div>
@@ -47,15 +47,15 @@
 
               <!-- Featured Image -->
               <figure class="img-holder">
-                <a href="#"><img src="{{ asset($transport->image) }}" class="img-responsive" alt="News"></a>
+                <a href="#"><img src="{{ asset($accomodation->image) }}" class="img-responsive" alt="News"></a>
 
               </figure>
 
               <!-- Blog Content -->
               <div class="full blog-content">
-                <a href="blog-detail.html"><h3>{{ $transport->title }}</h3></a>
+                <a href="blog-detail.html"><h3>{{ $accomodation->title }}</h3></a>
                 <div class="blog-text">
-                  {!! $transport->description !!}
+                  {!! $accomodation->description !!}
                 </div>
               </div>
               <!-- Blog Content -->

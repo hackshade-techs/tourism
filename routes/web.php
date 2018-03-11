@@ -18,7 +18,8 @@
 Route::get('/', 'PageController@welcome');
 Route::get('tours/{category}', 'TourCategoryController@show');
 Route::get('tours/{category}/{article}', 'TourController@show');
-Route::get('/transport/{transport}','PageController@single_transport');
+Route::get('/transport/{transport}','TransportController@show');
+Route::get('/accomodation/{accomodation}','AccomodationController@show');
 
 /* Backend Routes */
 Route::resource('contacts', 'ContactController',['only' => 'store']);

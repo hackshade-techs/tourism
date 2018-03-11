@@ -60,6 +60,7 @@
     <div class="col-md-6 col-sm-6">
       @include('includes.success')
       @include('includes.error')
+      @include('includes.errors')
       <form action="{{ route('contacts.store') }}" method="post">
         {{ csrf_field() }}
         <div class="form-group">

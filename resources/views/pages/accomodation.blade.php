@@ -40,18 +40,26 @@
         <div class="row">
           @foreach ($chunk as $accomodation)
             <div class="col-md-4 col-sm-6">
-            <div class="blog-box blog-grid-box">
-              <div class="blog-grid-box-img">
-                <img src="{{ asset($accomodation->image) }}" class="img-responsive" alt="" />
+              <div class="listing-shot grid-style">
+                <a href="{{ url('/accomodation/'.$accomodation->slug) }}">
+                  <div class="listing-shot-img">
+                    <img src="{{ asset($accomodation->image) }}" class="img-responsive" alt="">
+                  </div>
+                  <div class="listing-shot-caption">
+                    <h4>{{ substr($accomodation->title, 0,50) }}</h4>
+                    <p class="listing-location">{!! substr($accomodation->description, 0, 100) !!} ...</p>
+                  </div>
+                </a>
+                <div class="listing-shot-info rating">
+                  <div class="row extra">
+                    <div class="col-md-5 col-sm-5 col-xs-6 pull-right">
+                      <a href="{{ url('/accomodation/'.$accomodation->slug) }}" class="detail-link">View Details</a>
+                    </div>
+                  </div>
+                </div>
               </div>
-
-              <div class="blog-grid-box-content" style="height: 420px;">
-                <h4>{{ $accomodation->title }}</h4>
-                <p>{!! substr($accomodation->description, 0, 500) !!}</p>
-              </div>
-
             </div>
-          </div>
+
           @endforeach
         </div>
       @endforeach

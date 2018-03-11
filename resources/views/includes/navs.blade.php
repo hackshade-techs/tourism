@@ -1,6 +1,6 @@
 <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
   <li><a href="{{ url('/') }}" >Home</a></li>
-  <li><a href="{{ url('/about') }}" >About</a></li>
+  <li><a href="{{ url('/about-us') }}" >About</a></li>
 
 
   <li class="dropdown">
@@ -15,7 +15,7 @@
   <li class="dropdown">
     <a href="login.html" class="dropdown-toggle" data-toggle="dropdown">Explore</a>
     <ul class="dropdown-menu animated fadeOutUp">
-      <li><a href="{{ url('/plantrip') }}">Plan Your Trip</a></li>
+      <li><a href="{{ url('/plan-trip') }}">Plan Your Trip</a></li>
       <li><a href="{{ url('/accomodation') }}">Accomodation</a></li>
 
       <li><a href="{{ url('/transport') }}">Transport</a></li>

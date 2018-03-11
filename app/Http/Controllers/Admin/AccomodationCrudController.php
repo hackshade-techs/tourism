@@ -30,7 +30,7 @@ class AccomodationCrudController extends CrudController
 
         $this->crud->setFromDb();
 
-
+        // ------ CRUD FIELDS
         $this->crud->addField([
 
             'name' => 'image',
@@ -38,15 +38,7 @@ class AccomodationCrudController extends CrudController
             'type' => 'browse'
 
             ]);
-        $this->crud->addColumn([
 
-            'name' => 'image',
-            'label' => 'Image',
-            'type' => 'browse'
-
-            ]);
-
-        // ------ CRUD FIELDS
         $this->crud->addField([   // WYSIWYG Editor
             'name' => 'description',
             'label' => 'Description',
@@ -65,7 +57,7 @@ class AccomodationCrudController extends CrudController
             // 'prefix' => 'folder/subfolder/',
             // optional width/height if 25px is not ok with you
             // 'height' => '30px',
-            // 'width' => '30px',
+            'width' => '50px',
         ]);
         $this->crud->removeColumn('description');
         // $this->crud->addColumn(); // add a single column, at the end of the stack

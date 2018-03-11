@@ -116,143 +116,33 @@
 
           <div class="detail-wrapper">
             <div class="detail-wrapper-header">
-              <h4>24 Reviews</h4>
+              <h4><span id="dsq-count-scr"></span> Reviews</h4>
+              <script id="dsq-count-scr" src="//royal-experience-africa.disqus.com/count.js" async></script>
             </div>
             <div class="detail-wrapper-body">
-              <ul class="review-list">
-                <li>
-                  <div class="reviews-box">
-                    <div class="review-body">
-                      <div class="review-avatar">
-                        <img alt="" src="assets/img/user-1.png" class="avatar avatar-140 photo">
-                      </div>
-                      <div class="review-content">
-                        <div class="review-info">
-                          <div class="review-comment">
-                            <div class="review-author">
-                              Cole Harris
-                            </div>
-                            <div class="review-comment-stars">
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star empty"></i>
-                            </div>
-                          </div>
-                          <div class="review-comment-date">
-                            <div class="review-date">
-                              <span>4 weeks ago</span>
-                            </div>
-                          </div>
-                        </div>
-                        <p>At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Qui Blanditiis Praesentium Voluptatum Deleniti Atque Corrupti Quos Dolores Et Quas Molestias Excepturi Sint Occaecati Cupiditate Non Provident.</p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
+              <div id="disqus_thread"></div>
+              <script>
 
-                <li>
-                  <div class="reviews-box">
-                    <div class="review-body">
-                      <div class="review-avatar">
-                        <img alt="" src="assets/img/user-2.jpg" class="avatar avatar-140 photo">
-                      </div>
-                      <div class="review-content">
-                        <div class="review-info">
-                          <div class="review-comment">
-                            <div class="review-author">
-                              Mariya Merry
-                            </div>
-                            <div class="review-comment-stars">
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star empty"></i>
-                            </div>
-                          </div>
-                          <div class="review-comment-date">
-                            <div class="review-date">
-                              <span>3 weeks ago</span>
-                            </div>
-                          </div>
-                        </div>
-                        <p>At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Qui Blanditiis Praesentium Voluptatum Deleniti Atque Corrupti Quos Dolores Et Quas Molestias Excepturi Sint Occaecati Cupiditate Non Provident.</p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="reviews-box">
-                    <div class="review-body">
-                      <div class="review-avatar">
-                        <img alt="" src="assets/img/user-3.jpg" class="avatar avatar-140 photo">
-                      </div>
-                      <div class="review-content">
-                        <div class="review-info">
-                          <div class="review-comment">
-                            <div class="review-author">
-                              Wadden Will
-                            </div>
-                            <div class="review-comment-stars">
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star empty"></i>
-                            </div>
-                          </div>
-                          <div class="review-comment-date">
-                            <div class="review-date">
-                              <span>5 weeks ago</span>
-                            </div>
-                          </div>
-                        </div>
-                        <p>At Vero Eos Et Accusamus Et Iusto Odio Dignissimos Ducimus Qui Blanditiis Praesentium Voluptatum Deleniti Atque Corrupti Quos Dolores Et Quas Molestias Excepturi Sint Occaecati Cupiditate Non Provident.</p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
+              /**
+              *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+              *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+              /*
+              var disqus_config = function () {
+              this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+              this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+              };
+              */
+              (function() { // DON'T EDIT BELOW THIS LINE
+              var d = document, s = d.createElement('script');
+              s.src = 'https://royal-experience-africa.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+              })();
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
             </div>
           </div>
 
-          <div class="detail-wrapper">
-            <div class="detail-wrapper-header">
-              <h4>Rate & Write Reviews</h4>
-            </div>
-            <div class="detail-wrapper-body">
-
-              <div class="row mrg-bot-10">
-                <div class="col-md-12">
-                  <div class="rating-opt">
-                    <div   class="jr-ratenode jr-nomal"></div>
-                    <div   class="jr-ratenode jr-nomal "></div>
-                    <div   class="jr-ratenode jr-nomal "></div>
-                    <div   class="jr-ratenode jr-nomal "></div>
-                    <div   class="jr-ratenode jr-nomal "></div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-sm-6">
-                  <input type="text" class="form-control" placeholder="Your Name*">
-                </div>
-                <div class="col-sm-6">
-                  <input type="email" class="form-control" placeholder="Email Address*">
-                </div>
-                <div class="col-sm-12">
-                  <textarea class="form-control height-110" placeholder="Tell us your experience..."></textarea>
-                </div>
-                <div class="col-sm-12">
-                  <button type="button" class="btn theme-btn">Submit your review</button>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
         <!-- End: Listing Detail Wrapper -->
 

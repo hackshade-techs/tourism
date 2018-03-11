@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Transport;
+use App\Models\Transport;
 use Illuminate\Http\Request;
 
 class TransportController extends Controller
@@ -46,7 +46,7 @@ class TransportController extends Controller
      */
     public function show(Transport $transport)
     {
-        //
+        return view('pages.single_transport', compact('transport'));
     }
 
     /**
