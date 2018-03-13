@@ -6,10 +6,11 @@
 
     <!-- Start Header Navigation -->
     <div class="navbar-header">
-      <a class="navbar-brand" href="index.html">
+      
+      <!-- <a class="navbar-brand" href="index.html">
           <img src="assets/img/logo-white.png" class="logo logo-display" alt="">
           <img src="assets/img/logo.png" class="logo logo-scrolled" alt="">
-        </a>
+        </a> -->
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->

@@ -17,7 +17,7 @@
 
 
 <!-- ================ Start Page Title ======================= -->
-<section class="title-transparent page-title" style="background:url(assets/img/title-bg.jpg);">
+<section class="title-transparent page-title" style="background:url(assets/img/aboutone.jpg);">
   <div class="container">
     <div class="title-content">
       <h1>About Us</h1>

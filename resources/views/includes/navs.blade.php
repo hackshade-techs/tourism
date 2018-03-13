@@ -28,6 +28,6 @@
 
 
 </ul>
-<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+<!-- <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
   <li><a href="javascript:void(0)" data-toggle="modal" data-target="#signup">Sign In</a></li>
-</ul>
+</ul> -->

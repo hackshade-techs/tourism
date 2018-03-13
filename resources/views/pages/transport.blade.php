@@ -18,14 +18,14 @@
 
 
   <!-- ================ Start Page Title ======================= -->
-  <section class="title-transparent page-title" style="background:url(assets/img/title-bg.jpg);">
+  <section class="title-transparent page-title" style="background:url(assets/img/breadcrumb/transport.jpg);">
     <div class="container">
       <div class="title-content">
         <h1>Transport</h1>
         <div class="breadcrumbs">
           <a href="{{ url('/') }}">Home</a>
           <span class="gt3_breadcrumb_divider"></span>
-          <span class="current">Accomodation</span>
+          <span class="current">Transport</span>
         </div>
       </div>
     </div>

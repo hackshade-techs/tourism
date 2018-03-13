@@ -18,7 +18,7 @@
 
 
 <!-- ================ Start Page Title ======================= -->
-<section class="title-transparent page-title" style="background:url(assets/img/title-bg.jpg);">
+<section class="title-transparent page-title" style="background:url(assets/img/breadcrumb/contact.jpg);">
   <div class="container">
     <div class="title-content">
       <h1>Get In Touch</h1>

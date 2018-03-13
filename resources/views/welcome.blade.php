@@ -5,7 +5,7 @@
 	<!-- End Navigation -->
 	<div class="clearfix"></div>
 	<!-- Main Banner Section Start -->
-	<div class="banner dark-opacity" style="background-image:url(assets/img/slider-4.jpg);">
+	<div class="banner dark-opacity" style="background-image:url(assets/img/homepage/six.jpg);">
 		<div class="container">
 			<div class="banner-caption">
 				<div class="col-md-12 col-sm-12 banner-text">
@@ -98,7 +98,7 @@
 					<div class="listing-shot grid-style">
 						<a href="#">
 							<div class="listing-shot-img">
-								<img src="assets/img/category/art.jpg" class="img-responsive" alt="">
+								<img src="{{ $accomodation->image }}" class="img-responsive" alt="">
 								<span class="like-listing"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
 							</div>
 							<div class="listing-shot-caption">
@@ -117,7 +117,8 @@
 									<i class="fa fa-star" aria-hidden="true"></i>
 								</div>
 								<div class="col-md-5 col-sm-5 col-xs-6 pull-right">
-									<a href="accomodations/{{ $accomodation->id }}" class="detail-link">View Details</a>
+									<!-- <a href="accomodations/{{ $accomodation->id }}" class="detail-link">View Details</a> -->
+									<a href="{{ url('/accomodation') }}" class="detail-link">View Details</a>
 								</div>
 							</div>
 						</div>
@@ -133,7 +134,7 @@
 	<!-- End Top Listing -->
 
 	<!-- Best category -->
-	<section class="gray-bg">
+	<!-- <section class="gray-bg">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1">
@@ -152,7 +153,7 @@
 								<i class="bg-a cat-icon fa fa-paint-brush" aria-hidden="true"></i>
 							</div>
 							<div class="cat-box-name">
-								<h4>Art & Design</h4>
+								<h4>Safari One</h4>
 								<a href="#" class="btn-btn-wrowse">Browse</a>
 							</div>
 						</div>
@@ -164,7 +165,7 @@
 								<i class="bg-b cat-icon fa fa-graduation-cap" aria-hidden="true"></i>
 							</div>
 							<div class="cat-box-name">
-								<h4>Education</h4>
+								<h4>Safari 2</h4>
 								<a href="#" class="btn-btn-wrowse">Browse</a>
 							</div>
 						</div>
@@ -179,7 +180,7 @@
 								<i class="bg-g fa cat-icon fa-briefcase" aria-hidden="true"></i>
 							</div>
 							<div class="cat-box-name">
-								<h4>Business</h4>
+								<h4>Safari 3</h4>
 								<a href="search-listing.html" class="btn-btn-wrowse">Browse</a>
 							</div>
 						</div>
@@ -187,7 +188,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!-- End Best categories -->
 
 

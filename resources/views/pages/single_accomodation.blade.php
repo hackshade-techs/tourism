@@ -18,7 +18,7 @@
 
 
   <!-- ================ Start Page Title ======================= -->
-  <section class="title-transparent page-title" style="background:url({{ asset('assets/img/title-bg.jpg') }});">
+  <section class="title-transparent page-title" style="background:url({{ asset('assets/img/breadcrumb/accomodation.jpg') }});">
     <div class="container">
       <div class="title-content">
         <h1>{{ $accomodation->title }}</h1>
